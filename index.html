@@ -1,19 +1,22 @@
 <!doctype html>
 <html>
 <head>
+  <!--fake out favicon so we dont get weird 404s-->
 <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 </head>
 
-<b>CORS eh</b>
+<b>CORS!</b>
+<div id=stuff></div>
 
 <script type=module>
 async function main() { 
-  let url = 'https://xom3bn0ii8.execute-api.us-east-1.amazonaws.com/staging'
+  let url = 'https://cors.brian.io'
   let req = await fetch(url)
   let json = await req.json()
   console.log(json)
+  stuff.innerHTML = `<pre>${JSON.stringify(json)}</pre>`
 }
-// so glad async/await fixed nesting 🙄
+
 main()
 </script>
 </html>

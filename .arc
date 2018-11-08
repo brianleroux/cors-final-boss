@@ -1,7 +1,7 @@
 @app
 corsfun
 
-@adomain
+@domain
 cors.brian.io
 
 @http
