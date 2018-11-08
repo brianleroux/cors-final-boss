@@ -3,5 +3,9 @@
 <b>CORS eh</b>
 <script type=module>
 console.log('hi from ghpages')
+let url = 'https://xom3bn0ii8.execute-api.us-east-1.amazonaws.com/staging'
+let req = await fetch(url)
+let json = await req.json()
+console.log(json)
 </script>
 </html>

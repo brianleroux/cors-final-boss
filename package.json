@@ -1,0 +1,23 @@
+{
+  "name": "cors-final-boss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianleroux/cors-final-boss.git"
+  },
+  "keywords": [],
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brianleroux/cors-final-boss/issues"
+  },
+  "homepage": "https://github.com/brianleroux/cors-final-boss#readme",
+  "dependencies": {
+    "@architect/architect": "file:../arc-workflows"
+  }
+}
