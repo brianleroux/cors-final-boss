@@ -1,14 +1,19 @@
 <!doctype html>
 <html>
-  <head>
-    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
-  </head>
+<head>
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+</head>
+
 <b>CORS eh</b>
+
 <script type=module>
-console.log('hi from ghpages')
-let url = 'https://xom3bn0ii8.execute-api.us-east-1.amazonaws.com/staging'
-let req = await fetch(url)
-let json = await req.json()
-console.log(json)
+async function main() { 
+  let url = 'https://xom3bn0ii8.execute-api.us-east-1.amazonaws.com/staging'
+  let req = await fetch(url)
+  let json = await req.json()
+  console.log(json)
+}
+// so glad async/await fixed nesting 🙄
+main()
 </script>
 </html>
